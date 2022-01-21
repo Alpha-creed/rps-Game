@@ -1,0 +1,123 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: whitesmoke;
+}
+
+
+/* box of game */
+
+.container-fliud {
+    max-width: 550px;
+    height: 500px;
+    background: yellow;
+    transform: translate(10%, 20%);
+    box-shadow: 2px 2px 5px 5px gray;
+}
+
+
+/* scores */
+
+.scores {
+    max-width: 120px;
+    height: 60px;
+    transform: translateX(180%);
+    background: black;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/* alert */
+
+.alert {
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 80px;
+    justify-content: center;
+    height: 50px;
+    background: chartreuse;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    /* visibility: hidden; */
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+}
+
+.btn {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background: chocolate;
+    margin: 30px;
+    margin-top: 40px;
+}
+
+.rock {
+    background-image: url(./images/rock.jpg);
+    background-size: cover;
+}
+
+.Names {
+    position: relative;
+}
+
+.cName {
+    position: absolute;
+    left: 50px;
+    font-size: 30px;
+}
+
+.pName {
+    margin-right: 50px;
+    float: right;
+    font-size: 30px;
+}
+
+.scissors {
+    background-image: url(./images/scissors.jpg);
+    background-size: cover;
+}
+
+.paper {
+    transform: translateY(100%);
+    background-image: url(./images/papar.jpg);
+    background-size: cover;
+}
+
+.result {
+    max-width: 200px;
+    height: 50px;
+    background: violet;
+    transform: translate(100%, 250%);
+    font-size: 30px;
+}
+
+@media only screen and (min-width:1200px) {
+    .container-fliud {
+        max-width: 800px;
+        transform: translate(50%, 30%);
+    }
+    .scores {
+        transform: translate(270%);
+    }
+    .alert {
+        margin-left: 200px;
+    }
+    .btn {
+        margin: 60px;
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+    .result {
+        transform: translate(150%, 200%);
+    }
+}
